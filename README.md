@@ -7,14 +7,16 @@
 $ ./generate-email-signature.py
 ```
 This will generate a file with format `<Name>.html`
+
 4. Open your signature in the browser by running the following command in the terminal:
 ```bash
 browse <Name>.html
 ```
 Note: The signature will look squashed with the text overlapping, but Gmail add additional line spacing that will correct this.
+
 5. Add your custom `<Name>.html` signature to your email as follows:
-- Go to `Settings`, then `General`
-- Scroll down to the `Signature:` section
+- Go to `Settings`, then click on `See all settings`
+- On the `General` tab, scroll down to the `Signature:` section
 - Select `+ Create new`
 - Go back to the HTML file in your browser (from step 4) and highlight the entire signature
 - Drag and drop the signature into the signature box
