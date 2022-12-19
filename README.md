@@ -12,7 +12,7 @@ This will generate a file with format `<Name>.html`
 ```bash
 browse <Name>.html
 ```
-Note: The signature will look squashed with the text overlapping, but Gmail add additional line spacing that will correct this.
+Note: The signature will look squashed with the text overlapping, but Gmail automatically adds additional line spacing that will correct this.
 
 5. Add your custom `<Name>.html` signature to your email as follows:
 - Go to `Settings`, then click on `See all settings`
