@@ -5,6 +5,9 @@
 
 # load libraries
 import os
+import html2image
+from html2image import Html2Image
+import cv
 
 # -----------------------------------------------------------------------------
 
@@ -64,3 +67,14 @@ fpResult.write(html_signature)
 fpResult.close()
 
 # -----------------------------------------------------------------------------
+
+# convert html strings to image
+hti = Html2Image()
+hti.size = (500, 250)
+png = first_name + ".png"
+hti.screenshot(html_str = html_signature, css_str = "css/style.css", save_as = png, size = hti.size)
+
+# resize image according to max height and width (for Gmail)
+size = cv.GetSize(png)
+thumbnail = cv.CreateImage( ( size[0] / 10, size[1] / 10), png.depth, png.nChannels)
+cv.Resize(png, thumbnail)
